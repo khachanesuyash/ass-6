@@ -1,6 +1,6 @@
 //============================================================================
 // Name        : ass6.cpp
-// Author      : Mihir Mondhe(SECOA163)
+// Author      :Suyash khachne
 // Version     :
 // Copyright   : Your copyright notice
 // Description : Hello World in C++, Ansi-style
@@ -27,8 +27,8 @@ public:
 void hall::create()
 {
 	struct node *temp,*p;
-	int i=5;
-	for (int j=0;j<6;j++)
+	unsigned short int i=5;
+	for (unsigned short int j=0;j<6;j++)
 	{
 		start[j]=new (struct node);
 		start[j]->a='A';
@@ -50,7 +50,7 @@ void hall::create()
 }
 void hall::book()
 {
-	int i,j=0,m=0,n;
+	unsigned short int i,j=0,m=0,n;
 	struct node *p;
 	cout<<"\n Enter row:";
 	cin>>n;
@@ -89,7 +89,7 @@ void hall::traverse()
 int main()
 {
 	hall x;
-	int c=0;
+	unsigned short int c=0;
 	x.create();
 	do 
 	{
@@ -106,6 +106,7 @@ int main()
 				break;
 			case 2:
 				x.cancel();
+				cout<<"\b ticket cancelled successfully";
 				break;
 		}
 	}while (c!=3);
