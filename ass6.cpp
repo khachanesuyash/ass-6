@@ -28,7 +28,7 @@ void hall::create()
 {
 	struct node *temp,*p;
 	unsigned short int i=5;
-	for (unsigned short int j=0;j<6;j++)
+	for ( int j=0;j<6;j++)
 	{
 		start[j]=new (struct node);
 		start[j]->a='A';
